@@ -1,6 +1,7 @@
 import * as flsFunctions from './modules/functions.js'
 
 flsFunctions.isWebp();
+flsFunctions.sliders();
 
 const header = document.querySelector('.header');
 const burger = document.querySelector('.burger');
@@ -9,9 +10,64 @@ const menu = document.querySelector('.header__nav');
 if (burger && menu) {
     flsFunctions.burger(burger, menu, header)
 }
-if (header) {
-    flsFunctions.fixedHeader(header)
+// if (header) {
+//     flsFunctions.fixedHeader(header)
+// }
+
+const language = document.querySelector('.language')
+const languageCurrent = document.querySelector('.language-current')
+
+if (language && languageCurrent) {
+    flsFunctions.toggler(language, languageCurrent)
 }
+
+const headerNavList = document.querySelector('.header__nav-list')
+const headerNavListButton = document.querySelectorAll('.header__nav-list li button')
+
+if (headerNavList, headerNavListButton) {
+    flsFunctions.headerMenu(headerNavListButton, '.header__nav-list li button')
+}
+
+new Swiper('.slider-hero__body', {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoHeight: true,
+    speed: 800,
+    touchRatio: 0,
+    simulateTouch: true,
+    loop: true,
+    preloadImages: false,
+    lazy: true,
+    navigation: {
+        nextEl: '.slider-arrow__next',
+        prevEl: '.slider-arrow__prev',
+    },
+    on: {
+        lazyImageReady: function() {
+            ibg();
+        },
+    },
+})
+
+new Swiper('.slider-donation__body', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.slider-arrow__next',
+        prevEl: '.slider-arrow__prev',
+    },
+    on: {
+        lazyImageReady: function() {
+            ibg();
+        },
+    },
+})
 
 
 // let sliderTemplate = new Swiper('.slider', {

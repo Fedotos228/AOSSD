@@ -1,0 +1,30 @@
+.footer {
+    border-top: 2px solid #23478A;
+    &__body {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        img {
+            height: fit-content;
+        }
+    }
+    &__column {
+        h5 {
+            margin-bottom: 16px;
+        }
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 15px 0;
+        border-top: 1px solid rgba(44, 44, 48, 0.25);
+        p {
+            text-align: center;
+        }
+    }
+}
