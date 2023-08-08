@@ -8,7 +8,8 @@
 @import 'base/icons.scss';
 // Main Font =======================================================================================================================
 $fontFamily: 'Onest';
-$fontSize: rem(16px); // 14 - marimea textului din maket
+$fontSize: 16; // 14 - marimea textului din maket
+$minFontSize: 14; // 14 - marimea textului din maket
 // Culorile de baza ======================================================================================================================
 $maincolor: #2C2C30;
 $primary900: #122F53;

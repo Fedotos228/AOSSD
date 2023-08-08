@@ -161,7 +161,7 @@
     </nav>
 </header>
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="hero__container">
                 <div class="hero__text">
                     <p>Bine ai venit la</p>
@@ -180,11 +180,21 @@
                     <p>Misiunea</p>
                 </a>
             </div>
-        </section>
+        </section> -->
         <section class="page__hero-slider hero-slider">
             <div class="hero-slider__body hero-slider__container">
                 <div class="hero-slider__slider">
                     <div class="slider-hero__body swiper">
+                        <div class="slider-hero__slide" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%), url(img/hero.jpeg) lightgray 50% 50% / cover no-repeat;">
+                            <div class="labels">
+                                <span>
+                                    <i class="icon-calendar"></i>
+                                    27 iulie, 2023
+                                </span>
+                                <span>Comunicate de presa</span>
+                            </div>
+                            <h2>Creșterea gradului de conștientizare și declanșarea acțiunii</h2>
+                        </div>
                         <div class="slider-hero__slide" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%), url(img/hero.jpeg) lightgray 50% 50% / cover no-repeat;">
                             <div class="labels">
                                 <span>
@@ -223,43 +233,46 @@
             </div>
         </section>
         <section class="projects">
-            <h2>Proiecte implementate</h2>
+            <h2 class="section-header">Proiecte implementate</h2>
             <div class="projects__container">
-                <ul class="projects__list">
-                    <li class="projects__list-item">
-                        <div class="list-item__body">
+                <div class="projects__list">
+                    <div class="card">
+                        <div class="card__body">
                             <img src="img/proj.png" alt="project image">
                             <h4>Sprijin în funcție de nevoi pentru refugiații cu dizabilități din Ucraina în Moldova</h4>
+                            <span></span>
                             <p>Scopul proiectului: a contribui la bunăstarea refugiaților din Ucraina care trăiesc în Republica Moldova prin acordarea suportului umanitar.</p>
                         </div>
                         <div class="line"></div>
-                    </li>
-                    <li class="projects__list-item">
-                        <div class="list-item__body">
+                    </div>
+                    <div class="card">
+                        <div class="card__body">
                             <img src="img/proj.png" alt="project image">
                             <h4>Sprijin în funcție de nevoi pentru refugiații cu dizabilități din Ucraina în Moldova</h4>
+                            <span></span>
                             <p>Scopul proiectului: a contribui la bunăstarea refugiaților din Ucraina care trăiesc în Republica Moldova prin acordarea suportului umanitar.</p>
                         </div>
                         <div class="line"></div>
-                    </li>
-                    <li class="projects__list-item">
-                        <div class="list-item__body">
+                    </div>
+                    <div class="card">
+                        <div class="card__body">
                             <img src="img/proj.png" alt="project image">
                             <h4>Sprijin în funcție de nevoi pentru refugiații cu dizabilități din Ucraina în Moldova</h4>
+                            <span></span>
                             <p>Scopul proiectului: a contribui la bunăstarea refugiaților din Ucraina care trăiesc în Republica Moldova prin acordarea suportului umanitar.</p>
                         </div>
                         <div class="line"></div>
-                    </li>
-                    <li class="projects__list-item">
-                        <div class="list-item__body">
+                    </div>
+                    <div class="card">
+                        <div class="card__body">
                             <img src="img/proj.png" alt="project image">
                             <h4>Sprijin în funcție de nevoi pentru refugiații cu dizabilități din Ucraina în Moldova</h4>
+                            <span></span>
                             <p>Scopul proiectului: a contribui la bunăstarea refugiaților din Ucraina care trăiesc în Republica Moldova prin acordarea suportului umanitar.</p>
                         </div>
                         <div class="line"></div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </div>
         </section>
         <section class="donation">
             <div class="donation__container">
@@ -269,7 +282,7 @@
                         familii să se elibereze de ciclul sărăciei și să creeze un viitor mai luminos pentru ei și copiii lor.</p>
                     <a href="#" class="button button__primary">Donează</a>
                 </div>
-                <div class="page__donation-slider donation-slider">
+                <!-- <div class="page__donation-slider donation-slider">
                     <div class="donation-slider__body">
                         <div class="donation-slider__slider">
                             <div class="slider-donation__body swiper">
@@ -302,11 +315,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="partners">
-            <h2>Parteneri</h2>
+            <h2 class="section-header">Parteneri</h2>
             <div class="partners__container">
                 <ul class="partners__list">
                     <li>
@@ -343,6 +356,7 @@
             </div>
         </section>
         <section class="contact">
+            <h2 class="section-header">Contacte</h2>
             <div class="contact__container">
                 <form action="#">
                     <input type="text" placeholder="Nume, Prenume*">
@@ -379,7 +393,7 @@
     <footer class="footer">
     <div class="footer__container">
         <div class="footer__body">
-            <img src="img/logo.png" alt="logo">
+            <img class="footer__logo" src="img/logo.png" alt="logo">
             <div class="footer__column">
                 <h5>Date de contact</h5>
                 <ul>

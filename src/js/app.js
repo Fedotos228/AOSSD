@@ -8,7 +8,7 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header__nav');
 
 if (burger && menu) {
-    flsFunctions.burger(burger, menu, header)
+    flsFunctions.burger(burger, menu, header, 991.98)
 }
 // if (header) {
 //     flsFunctions.fixedHeader(header)
@@ -29,10 +29,10 @@ if (headerNavList, headerNavListButton) {
 }
 
 new Swiper('.slider-hero__body', {
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
     observer: true,
     observeParents: true,
     slidesPerView: 1,
@@ -56,7 +56,7 @@ new Swiper('.slider-hero__body', {
 })
 
 new Swiper('.slider-donation__body', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
         nextEl: '.slider-arrow__next',

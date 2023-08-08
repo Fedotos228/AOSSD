@@ -16,13 +16,16 @@ export function isWebp() {
     });
 }
 
-export function burger(burger, menu, header) {
-    burger.addEventListener('click', () => {
-        burger.classList.toggle('active');
-        menu.classList.toggle('active');
-        document.body.classList.toggle('lock');
-        header ? (menu.style.top = `${header.offsetHeight}px`) : '';
-    });
+export function burger(burger, menu, header, responsive) {
+    if (window.innerWidth <= responsive) {
+        menu.style.top = `${header.offsetHeight + 1}px `;
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+            document.body.classList.toggle('lock');
+        });
+    }
 }
 
 export function fixedHeader(header) {
