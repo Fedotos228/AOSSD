@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: $fontFamily, sans-serif;
-    @include adaptiv-value("font-size", $fontSize, $minFontSize, 1);
+    @include adaptiv-value('font-size', $fontSize, $minFontSize, 1);
     color: $maincolor;
     overflow-x: hidden;
     animation: fade 0.5s;
