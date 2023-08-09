@@ -11,19 +11,19 @@ $fontFamily: 'Onest';
 $fontSize: 16; // 14 - marimea textului din maket
 $minFontSize: 14; // 14 - marimea textului din maket
 // Culorile de baza ======================================================================================================================
-$maincolor: #2C2C30;
-$primary900: #122F53;
-$primary800: #23478A;
-$primary700: rgba(26, 73, 141, 0.80);
-$primary600: #486DA4;
-$neutral: #E6E6E6;
-$anti-fleshWhite: #ECF3F9;
-$gray500: rgba(44, 44, 48, 0.50);
-$gray300: #F9F9F9;
-$green: #0EA364;
-$red: #FF0000;
-$aquablue: #66B7E6;
-$violet: #888CDD;
+$maincolor: #2c2c30;
+$primary900: #122f53;
+$primary800: #23478a;
+$primary700: rgba(26, 73, 141, 0.8);
+$primary600: #486da4;
+$neutral: #e6e6e6;
+$anti-fleshWhite: #ecf3f9;
+$gray500: rgba(44, 44, 48, 0.5);
+$gray300: #f9f9f9;
+$green: #0ea364;
+$red: #ff0000;
+$aquablue: #66b7e6;
+$violet: #888cdd;
 $border: 1px solid $neutral;
 // Setarile =================================================================================================================================
 // Marimea minima a ecranului
@@ -39,7 +39,7 @@ $containerPadding: 30;
 // 2 - containerului are breakpoints(isi schimba marimea dupa breakpoint)
 $responsiveType: 1;
 // Marimea cand lucreaza primul breakpoint
-$containerWidth: $maxWidthContainer+$containerPadding;
+$containerWidth: $maxWidthContainer + $containerPadding;
 // Breakpoints
 $pc: rem($containerWidth + px);
 $tablet: rem(991.98px);
@@ -55,11 +55,11 @@ $mobileSmall: rem(479.98px);
     overflow: hidden;
     min-height: 100vh;
     // Impingem footerul jos
-    >main {
+    > main {
         flex: 1 1 auto;
     }
     // Fixarea sliderurilor
-    >* {
+    > * {
         min-width: 0;
     }
 }
@@ -80,16 +80,13 @@ $mobileSmall: rem(479.98px);
             padding: 0 rem(math.div($containerPadding, 2) + px);
         }
     }
-}
-
-@else {
+} @else {
     [class*='__container'] {
         margin: 0 auto;
         @if ($maxWidthContainer>0) {
             max-width: rem($maxWidthContainer);
             box-sizing: content-box;
-        }
-        @else {
+        } @else {
             @if ($containerPadding>0) {
                 padding: 0 rem(math.div($containerPadding, 2));
             }
@@ -117,4 +114,4 @@ $mobileSmall: rem(479.98px);
 // Conectarea stilurilor pentru pagini
 @import 'home';
 @import 'about';
-@import 'contacts'
+@import 'contacts';
