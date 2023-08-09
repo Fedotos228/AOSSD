@@ -1,0 +1,34 @@
+.contacts {
+    &__body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+        margin: 20px 0 50px;
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__map {
+        position: relative;
+        @media (max-width: $mobile) {
+            .background {
+                top: 0;
+            }
+            iframe {
+                margin-top: 20px;
+            }
+        }
+        iframe {
+            width: 90%;
+        }
+        .background {
+            position: absolute;
+            top: -47px;
+            right: 0;
+            width: 172px;
+            height: 495px;
+            background: linear-gradient(221deg, #64A2F2 0%, #0052B4 100%);
+            z-index: -1;
+        }
+    }
+}

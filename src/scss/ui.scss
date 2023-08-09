@@ -20,7 +20,7 @@ h5 {
 h6 {}
 
 p {
-    line-height: 130%;
+    line-height: 150%;
 }
 
 section {
@@ -59,7 +59,7 @@ textarea {
     transition: .3s;
     &__primary {
         width: 200px;
-        background-color: $primary700;
+        background-color: $primary600;
         color: #fff;
         font-weight: 700;
         &:hover {
@@ -113,6 +113,10 @@ textarea {
             }
         }
     }
+}
+
+.anti-flesh__white {
+    background-color: $anti-fleshWhite;
 }
 
 .no-scrollbar {

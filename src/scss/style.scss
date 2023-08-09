@@ -15,7 +15,9 @@ $maincolor: #2C2C30;
 $primary900: #122F53;
 $primary800: #23478A;
 $primary700: rgba(26, 73, 141, 0.80);
+$primary600: #486DA4;
 $neutral: #E6E6E6;
+$anti-fleshWhite: #ECF3F9;
 $gray500: rgba(44, 44, 48, 0.50);
 $gray300: #F9F9F9;
 $green: #0EA364;
@@ -114,3 +116,5 @@ $mobileSmall: rem(479.98px);
 @import 'components/header.scss';
 // Conectarea stilurilor pentru pagini
 @import 'home';
+@import 'about';
+@import 'contacts'
