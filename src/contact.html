@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('./components/head.html', {'title': 'Asociația Obștească Servicii Sociale Durabile'})
+    @@include('./components/head.html', {'title': 'Asociația Obștească Servicii Sociale Durabile'})
 
-<body>
-    @@include('./components/header.html')
-    <main>
-        <section class="contact">
-            <div class="contacts__container">
-                <h2>Contacteaza-ne</h2>
-                <div class="contacts__body">
-                    <form action="#">
-                        <input type="text" placeholder="Nume, Prenume*">
-                        <input type="email" placeholder="Email*">
-                        <input type="text" placeholder="Telefon*">
-                        <textarea placeholder="Comentariu"></textarea>
-                        <button type="submit" class="button button__primary">Trimite</button>
-                    </form>
-                    <div class="contacts__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21667.304875577516!2d28.747358137245644!3d47.24762468670809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbdd1a6ace843f%3A0x86bf1076ff94dafa!2sPeresecina%2C%20Moldova!5e0!3m2!1sen!2s!4v1691058413035!5m2!1sen!2s"
-                            height="560" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                        <div class="background"></div>
+    <body>
+        @@include('./components/header.html')
+        <main>
+            <div class="contact page-template">
+                <div class="contacts__container">
+                    <h2>Contacteaza-ne</h2>
+                    <div class="contacts__body">
+                        <form action="#">
+                            <input type="text" placeholder="Nume, Prenume*" />
+                            <input type="email" placeholder="Email*" />
+                            <input type="text" placeholder="Telefon*" />
+                            <textarea placeholder="Comentariu"></textarea>
+                            <button type="submit" class="button button__primary">Trimite</button>
+                        </form>
+                        <div class="contacts__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21667.304875577516!2d28.747358137245644!3d47.24762468670809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbdd1a6ace843f%3A0x86bf1076ff94dafa!2sPeresecina%2C%20Moldova!5e0!3m2!1sen!2s!4v1691058413035!5m2!1sen!2s"
+                                height="560"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
+                            <div class="background"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="contacts__list">
-                    <div>
-                        <h1>asdf</h1>
+                    <div class="contacts__list">
+                        <div>
+                            <h1>asdf</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    @@include('./components/footer.html')
+        </main>
+        @@include('./components/footer.html')
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/app.min.js"></script>
-</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

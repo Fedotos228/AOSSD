@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('./components/head.html', {'title': 'Asociația Obștească Servicii Sociale Durabile'})
+
+    <body>
+        @@include('./components/header.html')
+        <main>
+            <div class="page-template reports">
+                <div class="reports__container">
+                    <div class="reports__header">
+                        <h2>Rapoarte</h2>
+                    </div>
+                    
+                    <div class="reports__body reports-body">
+                        <div class="reports-body__item report">
+                            <img src="@img/pdf.svg" alt="">
+                            <h3>Raport financiar pentru anul 2023</h3>
+
+                            <a href="testfile.pdf" download class="button button__primary">Descarcă</a>
+                        </div>
+                        <div class="reports-body__item report">
+                            <img src="@img/pdf.svg" alt="">
+                            <h3>Raport financiar pentru anul 2023</h3>
+
+                            <a href="testfile.docx" download class="button button__primary">Descarcă</a>
+                        </div>
+                        <div class="reports-body__item report">
+                            <img src="@img/pdf.svg" alt="">
+                            <h3>Raport financiar pentru anul 2023</h3>
+
+                            <a href="testfile.pdf" download class="button button__primary">Descarcă</a>
+                        </div>
+                        <div class="reports-body__item report">
+                            <img src="@img/pdf.svg" alt="">
+                            <h3>Raport financiar pentru anul 2023</h3>
+
+                            <a href="testfile.docx" download class="button button__primary">Descarcă</a>
+                        </div>
+                        <div class="reports-body__item report">
+                            <img src="@img/pdf.svg" alt="">
+                            <h3>Raport financiar pentru anul 2023</h3>
+
+                            <a href="testfile.pdf" download class="button button__primary">Descarcă</a>
+                        </div>
+                    </div>
+                    <button class="button button__primary view-more" data-posts="5">Vezi mai mult</button>
+                </div>
+            </div>
+        </main>
+        @@include('./components/footer.html')
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

@@ -1,9 +1,9 @@
 import * as flsFunctions from './modules/functions.js';
+import './modules/default.js';
 
 flsFunctions.isWebp();
 flsFunctions.sliders();
 
-document.addEventListener('DOMContentLoaded', flsFunctions.updateCopyrightYear());
 
 const header = document.querySelector('.header');
 const burger = document.querySelector('.burger');
@@ -12,9 +12,6 @@ const menu = document.querySelector('.header__nav');
 if (burger && menu) {
     flsFunctions.burger(burger, menu, header, 991.98);
 }
-// if (header) {
-//     flsFunctions.fixedHeader(header)
-// }
 
 const language = document.querySelector('.language');
 const languageCurrent = document.querySelector('.language-current');
@@ -124,3 +121,21 @@ new Swiper('.slider-donation__body', {
 //         el: '.swiper-scrollbar',
 //     }
 // })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const reports = document.querySelectorAll('.report');
+    const fileExtensions = ['pdf', 'docx', 'zip'];
+
+    if (reports.length > 0) {
+        reports.forEach((report) => {
+            const reportDocument = report.querySelector('a.button').href;
+            const extension = reportDocument.split('.').pop().toLowerCase();
+
+            if (fileExtensions.includes(extension)) {
+                report.querySelector('img').src = `${window.location.origin}/img/${extension}.svg`
+            }
+        })
+    }
+});
+

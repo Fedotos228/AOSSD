@@ -28,18 +28,6 @@ export function burger(burger, menu, header, responsive) {
     }
 }
 
-export function updateCopyrightYear() {
-    const currentYear = new Date().getFullYear();
-    const copyrightElements = document.querySelectorAll('.copyright time');
-
-    copyrightElements.forEach((element) => {
-        const existingYear = parseInt(element.textContent);
-        if (existingYear !== currentYear) {
-            element.textContent = currentYear;
-        }
-    });
-}
-
 export function fixedHeader(header) {
     const main = document.querySelector('main');
     window.addEventListener('scroll', () => {

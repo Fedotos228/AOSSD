@@ -2,13 +2,15 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
-    @media (max-width: $mobileSmall) {
-        font-size: 22px;
-    }
+    @include adaptiv-value('font-size', 24, 22, 1);
+    // @media (max-width: $mobileSmall) {
+    //     font-size: 22px;
+    // }
 }
 
 h3 {
+    @include adaptiv-value('font-size', 20, 18, 1);
+    line-height: 150%;
 }
 
 h4 {
@@ -338,4 +340,8 @@ textarea {
             }
         }
     }
+}
+
+.page-template {
+    padding: 50px 0;
 }
