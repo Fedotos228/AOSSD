@@ -1,31 +1,33 @@
-import * as flsFunctions from './modules/functions.js'
+import * as flsFunctions from './modules/functions.js';
 
 flsFunctions.isWebp();
 flsFunctions.sliders();
+
+document.addEventListener('DOMContentLoaded', flsFunctions.updateCopyrightYear());
 
 const header = document.querySelector('.header');
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header__nav');
 
 if (burger && menu) {
-    flsFunctions.burger(burger, menu, header, 991.98)
+    flsFunctions.burger(burger, menu, header, 991.98);
 }
 // if (header) {
 //     flsFunctions.fixedHeader(header)
 // }
 
-const language = document.querySelector('.language')
-const languageCurrent = document.querySelector('.language-current')
+const language = document.querySelector('.language');
+const languageCurrent = document.querySelector('.language-current');
 
 if (language && languageCurrent) {
-    flsFunctions.toggler(language, languageCurrent)
+    flsFunctions.toggler(language, languageCurrent);
 }
 
-const headerNavList = document.querySelector('.header__nav-list')
-const headerNavListButton = document.querySelectorAll('.header__nav-list li button')
+const headerNavList = document.querySelector('.header__nav-list');
+const headerNavListButton = document.querySelectorAll('.header__nav-list li button');
 
-if (headerNavList, headerNavListButton) {
-    flsFunctions.headerMenu(headerNavListButton, '.header__nav-list li button')
+if ((headerNavList, headerNavListButton)) {
+    flsFunctions.headerMenu(headerNavListButton, '.header__nav-list li button');
 }
 
 new Swiper('.slider-hero__body', {
@@ -49,11 +51,11 @@ new Swiper('.slider-hero__body', {
         prevEl: '.slider-arrow__prev',
     },
     on: {
-        lazyImageReady: function() {
+        lazyImageReady: function () {
             ibg();
         },
     },
-})
+});
 
 new Swiper('.slider-donation__body', {
     slidesPerView: 1,
@@ -63,12 +65,11 @@ new Swiper('.slider-donation__body', {
         prevEl: '.slider-arrow__prev',
     },
     on: {
-        lazyImageReady: function() {
+        lazyImageReady: function () {
             ibg();
         },
     },
-})
-
+});
 
 // let sliderTemplate = new Swiper('.slider', {
 //     effect: 'fade',

@@ -1,5 +1,5 @@
 .footer {
-    border-top: 2px solid #23478A;
+    border-top: 2px solid #23478a;
     &__body {
         padding: 50px 0;
         display: flex;
@@ -24,10 +24,16 @@
                 &:not(:last-child) {
                     margin-bottom: 16px;
                 }
+                a {
+                    transition: 0.3s;
+                    &:hover {
+                        color: $primary800;
+                    }
+                }
             }
         }
     }
-    .copyright {
+    &__copyright {
         padding: 15px 0;
         border-top: 1px solid rgba(44, 44, 48, 0.25);
         p {
