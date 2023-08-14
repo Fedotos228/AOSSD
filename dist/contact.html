@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <title>Asociația Obștească Servicii Sociale Durabile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
-    <body>
-        <div class="wrapper">
+<body>
+    <div class="wrapper">
     <header class="header">
         <div class="header__upper">
             <div class="header__container">
@@ -17,6 +17,10 @@
                     <img src="img/logo.png" alt="" />
                 </a>
                 <div class="header__upper-right">
+                    <form action="#" class="search border-40">
+                        <i class="icon-search"></i>
+                        <input type="text" placeholder="Search">
+                    </form>
                     <div class="language">
                         <span class="language-current">
                             <svg
@@ -59,7 +63,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <i class="icon-arrow__down"></i>
+                            <i class="icon-chevron__down"></i>
                         </span>
                         <ul class="language-list">
                             <li>
@@ -213,7 +217,7 @@
                 <li>
                     <button href="#">
                         Media
-                        <i class="icon-arrow__down"></i>
+                        <i class="icon-chevron__down"></i>
                         <ul class="submenu">
                             <li>
                                 <a href="#">item</a>
@@ -230,7 +234,7 @@
                 <li>
                     <button href="#">
                         Transparenta
-                        <i class="icon-arrow__down"></i>
+                        <i class="icon-chevron__down"></i>
                         <ul class="submenu">
                             <li>
                                 <a href="#">item</a>
@@ -253,41 +257,71 @@
             </ul>
         </nav>
     </header>
-
-        <main>
-            <div class="contact page-template">
-                <div class="contacts__container">
-                    <h2>Contacteaza-ne</h2>
-                    <div class="contacts__body">
-                        <form action="#">
-                            <input type="text" placeholder="Nume, Prenume*" />
-                            <input type="email" placeholder="Email*" />
-                            <input type="text" placeholder="Telefon*" />
-                            <textarea placeholder="Comentariu"></textarea>
-                            <button type="submit" class="button button__primary">Trimite</button>
-                        </form>
-                        <div class="contacts__map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21667.304875577516!2d28.747358137245644!3d47.24762468670809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbdd1a6ace843f%3A0x86bf1076ff94dafa!2sPeresecina%2C%20Moldova!5e0!3m2!1sen!2s!4v1691058413035!5m2!1sen!2s"
-                                height="560"
-                                style="border: 0"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            >
+    <main>
+        <div class="contact page-template">
+            <div class="contacts__container">
+                <h2>Contacteaza-ne</h2>
+                <div class="contacts__body">
+                    <form action="#">
+                        <input type="text" placeholder="Nume, Prenume*" />
+                        <input type="email" placeholder="Email*" />
+                        <input type="text" placeholder="Telefon*" />
+                        <textarea placeholder="Comentariu"></textarea>
+                        <button type="submit" class="button button__primary">Trimite</button>
+                    </form>
+                    <div class="contacts__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21667.304875577516!2d28.747358137245644!3d47.24762468670809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbdd1a6ace843f%3A0x86bf1076ff94dafa!2sPeresecina%2C%20Moldova!5e0!3m2!1sen!2s!4v1691058413035!5m2!1sen!2s"
+                            height="560" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
-                            <div class="background"></div>
+                        <div class="background"></div>
+                    </div>
+                </div>
+                <div class="contacts-list">
+                    <div class="contacts-list__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27 4.5C22.2261 4.5 17.6477 6.39642 14.2721 9.77208C10.8964 13.1477 9 17.7261 9 22.5C9 29.4706 13.5354 36.2346 18.5084 41.4838C20.9489 44.0599 23.397 46.1688 25.2375 47.6344C25.9225 48.1799 26.5208 48.6342 27 48.9883C27.4792 48.6342 28.0775 48.1799 28.7625 47.6344C30.603 46.1688 33.0511 44.0599 35.4916 41.4838C40.4646 36.2346 45 29.4706 45 22.5C45 17.7261 43.1036 13.1477 39.7279 9.77208C36.3523 6.39642 31.7739 4.5 27 4.5ZM27 51.75C25.7519 53.6221 25.7514 53.6217 25.7507 53.6213L25.7443 53.617L25.7293 53.6069L25.6777 53.5721C25.6339 53.5423 25.5714 53.4996 25.4915 53.4442C25.3317 53.3335 25.102 53.1723 24.8125 52.9632C24.2337 52.5452 23.4143 51.935 22.4344 51.1547C20.478 49.5968 17.8636 47.3464 15.2416 44.5787C10.0896 39.1404 4.5 31.2794 4.5 22.5C4.5 16.5326 6.87053 10.8097 11.0901 6.5901C15.3097 2.37053 21.0326 0 27 0C32.9674 0 38.6903 2.37053 42.9099 6.5901C47.1295 10.8097 49.5 16.5326 49.5 22.5C49.5 31.2794 43.9104 39.1404 38.7584 44.5787C36.1364 47.3464 33.522 49.5968 31.5656 51.1547C30.5857 51.935 29.7663 52.5452 29.1875 52.9632C28.898 53.1723 28.6683 53.3335 28.5085 53.4442C28.4286 53.4996 28.3661 53.5423 28.3223 53.5721L28.2707 53.6069L28.2557 53.617L28.251 53.6202C28.2503 53.6206 28.2481 53.6221 27 51.75ZM27 51.75L28.2481 53.6221C27.4923 54.126 26.5065 54.1251 25.7507 53.6213L27 51.75Z" fill="#1A498D"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27 18C24.5147 18 22.5 20.0147 22.5 22.5C22.5 24.9853 24.5147 27 27 27C29.4853 27 31.5 24.9853 31.5 22.5C31.5 20.0147 29.4853 18 27 18ZM18 22.5C18 17.5294 22.0294 13.5 27 13.5C31.9706 13.5 36 17.5294 36 22.5C36 27.4706 31.9706 31.5 27 31.5C22.0294 31.5 18 27.4706 18 22.5Z" fill="#1A498D"/>
+                            </svg>
+                        <div class="contacts-item__body">
+                            <h4>Locatia</h4>
+                            <a href="#">Mun. Chișinău, Piața Marii Adunări Naționale 1</a>
                         </div>
                     </div>
-                    <div class="contacts__list">
-                        <div>
-                            <h1>asdf</h1>
+                    <div class="contacts-list__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 11.25C7.76764 11.25 6.75 12.2676 6.75 13.5V40.5C6.75 41.7324 7.76764 42.75 9 42.75H45C46.2324 42.75 47.25 41.7324 47.25 40.5V13.5C47.25 12.2676 46.2324 11.25 45 11.25H9ZM2.25 13.5C2.25 9.78236 5.28236 6.75 9 6.75H45C48.7176 6.75 51.75 9.78236 51.75 13.5V40.5C51.75 44.2176 48.7176 47.25 45 47.25H9C5.28236 47.25 2.25 44.2176 2.25 40.5V13.5Z" fill="#1A498D"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.65692 12.2097C3.36953 11.1917 4.77247 10.9441 5.79048 11.6567L27.0002 26.5035L48.2099 11.6567C49.2279 10.9441 50.6309 11.1917 51.3435 12.2097C52.0561 13.2277 51.8085 14.6307 50.7905 15.3433L28.2905 31.0933C27.5158 31.6356 26.4846 31.6356 25.7099 31.0933L3.2099 15.3433C2.19189 14.6307 1.94431 13.2277 2.65692 12.2097Z" fill="#1A498D"/>
+                            </svg>
+                        <div class="contacts-item__body">
+                            <h4>Email</h4>
+                            <a href="mailto:inascolnii@aossd.gov.md">inascolnii@aossd.gov.md</a>
+                        </div>
+                    </div>
+                    <div class="contacts-list__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                                <path d="M45.0001 51.525C44.7751 51.525 44.5501 51.525 44.3251 51.525C37.1251 50.625 29.9251 48.15 23.8501 44.325C18.2251 40.725 13.2751 35.775 9.6751 30.15C5.6251 24.075 3.1501 16.875 2.4751 9.675C2.4751 7.875 2.9251 6.075 4.0501 4.725C5.1751 3.375 6.7501 2.475 8.5501 2.25C8.7751 2.25 9.0001 2.25 9.2251 2.25H15.9751C19.3501 2.25 22.2751 4.725 22.7251 8.1C22.9501 10.125 23.4001 12.15 24.0751 13.95C24.9751 16.425 24.3001 19.125 22.5001 21.15L20.9251 22.725C23.6251 26.775 27.0001 30.375 31.2751 33.075L32.8501 31.5C34.6501 29.7 37.5751 29.025 40.0501 29.925C41.8501 30.6 43.8751 31.05 45.9001 31.275C49.2751 31.725 51.7501 34.65 51.7501 38.025V44.775C51.7501 46.575 51.0751 48.375 49.7251 49.5C48.3751 50.625 46.8001 51.525 45.0001 51.525ZM15.9751 6.75H9.2251C8.5501 6.75 7.8751 7.2 7.4251 7.65C7.2001 8.1 6.9751 8.55 6.9751 9.225C7.6501 15.75 9.9001 22.05 13.5001 27.675C16.8751 32.85 21.1501 37.35 26.3251 40.5C31.9501 44.1 38.2501 46.35 44.7751 47.025C45.6751 47.025 46.1251 46.8 46.5751 46.35C47.0251 45.9 47.2501 45.45 47.2501 44.775V38.025C47.2501 36.9 46.3501 36 45.2251 35.775C42.9751 35.55 40.7251 34.875 38.4751 33.975C37.5751 33.75 36.6751 33.75 36.0001 34.425L33.0751 37.35C32.4001 38.025 31.2751 38.25 30.3751 37.8C24.3001 34.425 19.3501 29.475 15.9751 23.4C15.7501 22.5 15.9751 21.375 16.6501 20.7L19.5751 17.775C20.0251 17.325 20.2501 16.2 20.0251 15.525C19.1251 13.275 18.6751 11.025 18.2251 8.775C18.2251 7.65 17.1001 6.75 15.9751 6.75Z" fill="#1A498D"/>
+                            </svg>
+                        <div class="contacts-item__body">
+                            <h4>Telefon</h4>
+                            <a href="tel:(+373 22) 234 213">(+373 22) 234 213</a>
+                        </div>
+                    </div>
+                    <div class="contacts-list__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 4.5C11.25 3.25736 12.2574 2.25 13.5 2.25H40.5C41.7426 2.25 42.75 3.25736 42.75 4.5V20.25C42.75 21.4926 41.7426 22.5 40.5 22.5C39.2574 22.5 38.25 21.4926 38.25 20.25V6.75H15.75V20.25C15.75 21.4926 14.7426 22.5 13.5 22.5C12.2574 22.5 11.25 21.4926 11.25 20.25V4.5Z" fill="#1A498D"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 22.5C8.40326 22.5 7.83097 22.7371 7.40901 23.159C6.98705 23.581 6.75 24.1533 6.75 24.75V36C6.75 36.5967 6.98705 37.169 7.40901 37.591C7.83097 38.0129 8.40326 38.25 9 38.25H13.5C14.7426 38.25 15.75 39.2574 15.75 40.5C15.75 41.7426 14.7426 42.75 13.5 42.75H9C7.20979 42.75 5.4929 42.0388 4.22703 40.773C2.96116 39.5071 2.25 37.7902 2.25 36V24.75C2.25 22.9598 2.96116 21.2429 4.22703 19.977C5.4929 18.7112 7.20979 18 9 18H45C46.7902 18 48.5071 18.7112 49.773 19.977C51.0388 21.2429 51.75 22.9598 51.75 24.75V36C51.75 37.7902 51.0388 39.5071 49.773 40.773C48.5071 42.0388 46.7902 42.75 45 42.75H40.5C39.2574 42.75 38.25 41.7426 38.25 40.5C38.25 39.2574 39.2574 38.25 40.5 38.25H45C45.5967 38.25 46.169 38.0129 46.591 37.591C47.0129 37.169 47.25 36.5967 47.25 36V24.75C47.25 24.1533 47.0129 23.581 46.591 23.159C46.169 22.7371 45.5967 22.5 45 22.5H9Z" fill="#1A498D"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 31.5C11.25 30.2574 12.2574 29.25 13.5 29.25H40.5C41.7426 29.25 42.75 30.2574 42.75 31.5V49.5C42.75 50.7426 41.7426 51.75 40.5 51.75H13.5C12.2574 51.75 11.25 50.7426 11.25 49.5V31.5ZM15.75 33.75V47.25H38.25V33.75H15.75Z" fill="#1A498D"/>
+                            </svg>
+                        <div class="contacts-item__body">
+                            <h4>Fax</h4>
+                            <a href="tel:(+373 22) 234 312">(+373 22) 234 312</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
+        </div>
+    </main>
+    <footer class="footer">
     <div class="footer__container">
         <div class="footer__body">
             <img class="footer__logo" src="img/logo.png" alt="logo" />
@@ -350,7 +384,8 @@
 </footer>
 </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="js/app.min.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
 </html>

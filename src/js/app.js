@@ -1,4 +1,5 @@
 import * as flsFunctions from './modules/functions.js';
+import 'fslightbox';
 import './modules/default.js';
 
 flsFunctions.isWebp();
@@ -48,25 +49,33 @@ new Swiper('.slider-hero__body', {
         prevEl: '.slider-arrow__prev',
     },
     on: {
-        lazyImageReady: function () {
+        lazyImageReady: function() {
             ibg();
         },
     },
 });
 
 new Swiper('.slider-donation__body', {
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 30,
+    grid: {
+        rows: 2,
+        fill: "row"
+    },
     navigation: {
         nextEl: '.slider-arrow__next',
         prevEl: '.slider-arrow__prev',
     },
     on: {
-        lazyImageReady: function () {
+        lazyImageReady: function() {
             ibg();
         },
     },
 });
+
+const other = document.querySelector('.other')
+const otherCards = document.querySelectorAll('.other .card')
+
 
 // let sliderTemplate = new Swiper('.slider', {
 //     effect: 'fade',
@@ -138,4 +147,3 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 });
-

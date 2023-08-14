@@ -18,6 +18,12 @@
             align-items: center;
             justify-content: space-between;
             .header__upper-right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .search {
+                    width: 240px;
+                }
                 .language {
                     @media (max-width: $tablet) {
                         display: none;

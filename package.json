@@ -13,6 +13,7 @@
     "author": "WHHROO",
     "license": "ISC",
     "dependencies": {
+        "fslightbox": "^3.4.1",
         "gulp-cli": "^2.3.0",
         "gulp-imagemin": "^8.0.0",
         "gulp-webp": "^4.0.1"

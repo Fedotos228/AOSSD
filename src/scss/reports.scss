@@ -1,30 +1,5 @@
-.reports{
-    &-body{
+.reports {
+    &-body {
         margin: 30px 0;
-    }
-
-    .view-more{
-        margin: 0 auto;
-    }
-}
-
-.report{
-    border-radius: 4px;
-    box-shadow: 0px 4px 25px 0px rgba(32, 43, 109, 0.15);
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    @include adaptiv-value('padding', 20, 16, 1);
-    @media (max-width: $mobileMedium) {
-    }
-    a{
-        margin-left: auto;
-        @media (max-width: $mobileMedium) {
-            width: 100%;
-        }
-    }
-    &:not(:last-child){
-        margin-bottom: 30px;
     }
 }

@@ -1,0 +1,47 @@
+.news {
+    .events {
+        @include adaptiv-value("margin-top", 100, 70, 1);
+        &-grid {
+            display: grid;
+            gap: 20px;
+            .events-item {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 16px 0;
+                border-bottom: 1px solid #CCC;
+                .date {
+                    border-radius: 4px;
+                    background-color: #fff;
+                    &__body {
+                        padding: 8px;
+                        border-radius: 4px;
+                        background-color: $primary600;
+                        * {
+                            white-space: nowrap;
+                            color: #fff;
+                        }
+                    }
+                    h4 {
+                        padding: 8px 0;
+                        text-align: center;
+                    }
+                }
+                &__body {
+                    span {
+                        line-height: 150%;
+                    }
+                    h3 {
+                        line-height: 150%;
+                    }
+                    .location {
+                        margin-top: 16px;
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

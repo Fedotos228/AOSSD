@@ -1,0 +1,46 @@
+.library {
+    .search {
+        max-width: 644px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 20px;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        .line {
+            position: relative;
+            width: 6px;
+            height: 100%;
+            background-color: #66b7e6;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 2px;
+                height: 0;
+                background-color: #2c5b77;
+                transition: 0.5s;
+            }
+        }
+        &__body {
+            padding: 25px;
+            p {
+                margin-top: 10px;
+                font-size: 12px;
+                @include text-truncate(2)
+            }
+        }
+        &:hover {
+            .line {
+                &::after {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

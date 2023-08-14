@@ -12,10 +12,11 @@
         position: relative;
         @media (max-width: $mobile) {
             .background {
-                top: 0;
+                display: none;
             }
             iframe {
                 margin-top: 20px;
+                width: 100% !important;
             }
         }
         iframe {
@@ -29,6 +30,39 @@
             height: 495px;
             background: linear-gradient(221deg, #64a2f2 0%, #0052b4 100%);
             z-index: -1;
+        }
+    }
+    &-list {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $mobileSmall) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            @include adaptiv-value("gap", 20, 10, 1);
+            svg {
+                width: 54px;
+                height: 54px;
+                @media(max-width: $mobileSmall) {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+            h4 {
+                margin-bottom: 5px;
+            }
+            a {
+                text-wrap: balance;
+                line-height: 150%;
+            }
         }
     }
 }
