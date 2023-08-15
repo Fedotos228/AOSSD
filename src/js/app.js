@@ -71,6 +71,29 @@ new Swiper('.slider-donation__body', {
             ibg();
         },
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            autoHeight: true,
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            grid: {
+                rows: 2,
+                fill: "row"
+            },
+        },
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            grid: {
+                rows: 2,
+                fill: "row"
+            },
+        },
+    }
 });
 
 const other = document.querySelector('.other')

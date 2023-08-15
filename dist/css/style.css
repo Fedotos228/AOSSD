@@ -572,6 +572,11 @@ textarea {
   border: 1px solid #e6e6e6;
   background-color: #ecf3f9;
 }
+@media (max-width: 61.99875rem) {
+  .search {
+    display: none;
+  }
+}
 .search i {
   font-size: 16px;
 }
@@ -580,6 +585,16 @@ textarea {
   border: none;
   border-radius: 0;
   background-color: #ecf3f9;
+}
+.search.mobile-search {
+  display: none;
+}
+@media (max-width: 61.99875rem) {
+  .search.mobile-search {
+    display: flex;
+    width: 100%;
+    margin: 15px;
+  }
 }
 
 .card {
@@ -1124,7 +1139,7 @@ textarea {
 }
 @media (max-width: 61.99875rem) {
   .donation__container {
-    grid-template-columns: 1fr;
+    display: block;
   }
 }
 .donation__body h2 {
@@ -1132,6 +1147,9 @@ textarea {
 }
 .donation__body p {
   margin-bottom: 30px;
+}
+.donation .page__donation-slider {
+  margin-top: 30px;
 }
 .donation .page__donation-slider .donation-slider__body .donation-slider__slider .slider-donation__body .slider-donation__slide {
   width: 295px;

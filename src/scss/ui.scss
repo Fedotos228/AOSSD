@@ -297,6 +297,9 @@ textarea {
     padding: 15px;
     border: $border;
     background-color: $anti-flash-white;
+    @media (max-width: $tablet) {
+        display: none;
+    }
     i {
         font-size: 16px;
     }
@@ -305,6 +308,14 @@ textarea {
         border: none;
         border-radius: 0;
         background-color: $anti-flash-white;
+    }
+    &.mobile-search {
+        display: none;
+        @media (max-width: $tablet) {
+            display: flex;
+            width: 100%;
+            margin: 15px;
+        }
     }
 }
 
