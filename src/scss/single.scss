@@ -22,6 +22,20 @@
             aspect-ratio: 3/4;
             margin-bottom: 30px;
         }
+        .single-donors {
+            margin-bottom: 30px;
+            .donors-list {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                img {
+                    display: block;
+                    width: 100%;
+                    max-width: 210px;
+                }
+            }
+        }
         p {
             line-height: 160%;
         }

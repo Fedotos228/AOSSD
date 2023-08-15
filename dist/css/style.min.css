@@ -1547,6 +1547,20 @@ textarea {
   aspect-ratio: 3/4;
   margin-bottom: 30px;
 }
+.single__container .single-donors {
+  margin-bottom: 30px;
+}
+.single__container .single-donors .donors-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.single__container .single-donors .donors-list img {
+  display: block;
+  width: 100%;
+  max-width: 210px;
+}
 .single__container p {
   line-height: 160%;
 }
