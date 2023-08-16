@@ -101,7 +101,14 @@
                         }
                         i {
                             font-size: 16px;
+                            @media (max-width: $mobileMedium) {
+                                font-size: 12px;
+                            }
                         }
+                    }
+                    @media (max-width: $mobileSmall) {
+                        flex-direction: column;
+                        align-items: flex-start;
                     }
                 }
             }
@@ -196,6 +203,10 @@
                     .swiper-wrapper {}
                     .slider-donation__slide {
                         width: 295px;
+                        overflow: visible;
+                        img {
+                            margin-bottom: 10px;
+                        }
                     }
                 }
                 .slider-donation-controls {
@@ -304,7 +315,7 @@
             align-items: center;
             @include adaptiv-value('gap', 20, 10, 1);
             &:not(:last-child) {
-                @include adaptiv-value('margin-bottom', 32, 15, 1);
+                @include adaptiv-value('margin-bottom', 32, 20, 1);
             }
         }
     }
@@ -325,7 +336,6 @@ $animationSpeed: 40s;
     }
 }
 
-// Styling
 .slider {
     background: white;
     height: 100px;

@@ -88,6 +88,7 @@ new Swiper('.slider-donation__body', {
         480: {
             slidesPerView: 2,
             spaceBetween: 15,
+            autoHeight: true,
             grid: {
                 rows: 2,
                 fill: "row"
