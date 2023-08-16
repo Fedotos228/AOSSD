@@ -110,8 +110,8 @@
                 gap: 30px;
             }
             li {
-                a,
-                button {
+                a {
+                    display: block;
                     padding: 15px;
                     transition: 0.3s;
                     @media (max-width: $tablet) {
@@ -121,19 +121,19 @@
                         color: $primary800;
                     }
                 }
-                button {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    .submenu {
-                        position: absolute;
-                        top: 120%;
-                        left: 0;
-                        opacity: 0;
-                        visibility: hidden;
-                    }
-                }
+                // button {
+                //     position: relative;
+                //     display: flex;
+                //     align-items: center;
+                //     gap: 10px;
+                //     .submenu {
+                //         position: absolute;
+                //         top: 120%;
+                //         left: 0;
+                //         opacity: 0;
+                //         visibility: hidden;
+                //     }
+                // }
             }
         }
     }

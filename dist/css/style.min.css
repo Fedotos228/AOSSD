@@ -879,33 +879,18 @@ textarea {
     gap: 30px;
   }
 }
-.header__nav-list li a,
-.header__nav-list li button {
+.header__nav-list li a {
+  display: block;
   padding: 15px;
   transition: 0.3s;
 }
 @media (max-width: 61.99875rem) {
-  .header__nav-list li a,
-.header__nav-list li button {
+  .header__nav-list li a {
     padding: 0;
   }
 }
-.header__nav-list li a:hover,
-.header__nav-list li button:hover {
+.header__nav-list li a:hover {
   color: #23478a;
-}
-.header__nav-list li button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.header__nav-list li button .submenu {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
 }
 
 @keyframes fixedHeader {
