@@ -1,0 +1,22 @@
+.gallery {
+    &__categories {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        li {
+            button {
+                border-radius: 4px;
+                color: #122F53;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: 700;
+                transition: .2s;
+                &.active,
+                &:hover {
+                    background-color: #122F53;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}

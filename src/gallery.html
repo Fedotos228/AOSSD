@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'Asociația Obștească Servicii Sociale Durabile'})
+
+<body>
+    @@include('./components/header.html')
+    <main>
+        <section class="gallery">
+            <div class="gallery__container">
+                <ul class="gallery__categories">
+                    <li>
+                        <button>
+                            Categorie1
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            Categorie1
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            Categorie1
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            Categorie1
+                        </button>
+                    </li>
+                </ul>
+                <div class="main-grid">
+                    <a href="gallery-single.html" class="card">
+                        <div class="card__body">
+                            <img src="@img/post.jpeg" alt="project image">
+                            <h4>Sprijin în funcție de nevoi pentru refugiații cu dizabilități din Ucraina în Moldova Sprijin în funcție de nevoi pentru refugiații cu dizabilități din Ucraina în Moldova</h4>
+                            <span>10 aug., 2023</span>
+                        </div>
+                        <div class="line"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./components/footer.html')
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
