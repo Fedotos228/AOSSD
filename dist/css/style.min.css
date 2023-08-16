@@ -33,6 +33,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-crop:before {
+  content: "\e908";
+}
+
 .icon-search:before {
   content: "\e907";
 }
@@ -1643,9 +1647,6 @@ textarea {
 .gallery-single__grid img {
   width: 100%;
 }
-.gallery-single__grid img::after {
-  content: "";
-}
 .gallery-single__grid .big-img {
   grid-column: 3 span;
   height: 340px;
@@ -1682,14 +1683,11 @@ textarea {
   z-index: 2;
   transition: 0.2s;
 }
-.gallery-single__grid .gallery-item .crop svg {
-  width: 20px;
-  height: 20px;
+.gallery-single__grid .gallery-item .crop i {
+  font-size: 20px;
+  color: #FFF;
 }
-.gallery-single__grid .gallery-item:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
+.gallery-single__grid .gallery-item:hover::before,
 .gallery-single__grid .gallery-item:hover .crop {
   opacity: 1;
   visibility: visible;
@@ -1777,6 +1775,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-bottom: 20px;
 }
 .gallery__categories li button {
   border-radius: 4px;
@@ -1786,7 +1785,7 @@ textarea {
   font-weight: 700;
   transition: 0.2s;
 }
-.gallery__categories li button.active, .gallery__categories li button:hover {
+.gallery__categories li.active button, .gallery__categories li:hover button {
   background-color: #122F53;
   color: #FFF;
 }

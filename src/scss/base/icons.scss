@@ -20,6 +20,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-crop:before {
+    content: "\e908";
+}
+
 .icon-search:before {
     content: "\e907";
 }
