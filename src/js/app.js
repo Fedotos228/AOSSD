@@ -17,8 +17,16 @@ if (burger && menu) {
 const language = document.querySelector('.language');
 const languageCurrent = document.querySelector('.language-current');
 
-if (language && languageCurrent) {
-    flsFunctions.toggler(language, languageCurrent);
+if (language) {
+    languageCurrent.addEventListener('click', () => {
+        language.classList.toggle('active')
+    })
+    document.addEventListener('click', (e) => {
+        const isClickInside = languageCurrent.contains(e.target);
+        if (!isClickInside) {
+            language.classList.remove('active');
+        }
+    });
 }
 
 const headerNavList = document.querySelector('.header__nav-list');
@@ -95,65 +103,6 @@ new Swiper('.slider-donation__body', {
         },
     }
 });
-
-const other = document.querySelector('.other')
-const otherCards = document.querySelectorAll('.other .card')
-
-
-// let sliderTemplate = new Swiper('.slider', {
-//     effect: 'fade',
-//     autoplay:{
-//         delay: 3000,
-//         disableOnInteraction: false,
-//     },
-//     observer: true,
-//     observeParents: true,
-//     slidesPerView: 1,
-//     spaceBetween: 0,
-//     autoHeight: true,
-//     speed: 800,
-//     touchRatio: 0,
-//     simulateTouch: false,
-//     loop: true,
-//     preloadImages: false,
-//     lazy: true,
-//     pagination: {
-//         el: '.slider-pagging',
-//         clickable: true,
-//     },
-//     navigation:{
-//         nextEl: '.swiper-next',
-//         prevEl: '.swiper-prev',
-//     },
-//     breakpoints: {
-//         320: {
-//             slidesPerView: 1,
-//             spaceBetween: 0,
-//             autoHeight: true,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//             spaceBetween: 20,
-//         },
-//         992: {
-//             slidesPerView: 3,
-//             spaceBetween: 20,
-//         },
-//         1268: {
-//             slidesPerView: 4,
-//             spaceBetween: 30,
-//         },
-//     },
-//     on: {
-//         lazyImageReady: function () {
-//             ibg();
-//         },
-//     },
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     }
-// })
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const reports = document.querySelectorAll('.report');

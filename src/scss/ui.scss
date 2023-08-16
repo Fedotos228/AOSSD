@@ -290,23 +290,23 @@ textarea {
 }
 
 .search {
+    position: relative;
     width: 240px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
-    border: $border;
-    background-color: $anti-flash-white;
     @media (max-width: $tablet) {
         display: none;
     }
-    i {
-        font-size: 16px;
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12px;
+        i {
+            font-size: 16px;
+        }
     }
     input {
-        padding: 0;
-        border: none;
-        border-radius: 0;
+        border-radius: 40px;
+        padding: 15px 15px 15px 35px;
         background-color: $anti-flash-white;
     }
     &.mobile-search {
@@ -355,7 +355,7 @@ textarea {
         }
         span {
             color: #486da4;
-            font-size: 10px;
+            font-size: 12px;
             font-weight: 700;
             line-height: 150%;
             &:empty {
